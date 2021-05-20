@@ -38,6 +38,7 @@ conda activate leap
 cd lib
 install_name_tool -change /Library/Frameworks/Python.framework/Versions/2.7/Python [path-to-libpython2.7.dylib] LeapPython.so
 ```
+You may receive a warning, but that's okay!
 4. Install the required Python packages from above
 
 ## Running the Program:
