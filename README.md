@@ -19,12 +19,14 @@ Touchless Computer Assistant (TCA) enables you to control your Mac with just spe
 - portaudio (download using ```brew install portaudio```)
 - swig (download using ```brew install swig```)
 - Required Python packages (install using ```pip install```)
-  - pyobjc=5.3
-  - Pillow=6.2.2
-  - PyAudio=0.2.11
+  - pyobjc
+  - Pillow
+  - PyAudio
   - PyAutoGUI=0.9.40
-  - SpeechRecognition=3.8.1
-  - wheel=0.36.2
+  - SpeechRecognition
+  - wheel
+  - MouseInfo
+  - rubicon-objc
 
 ## Additional Set-up:
 1. Enable terminal to access keyboard/mouse: Go into System Preferences -> Security & Privacy -> Privacy -> Accessibility and allow Terminal (or wherever you wish to run the prgoram from) to control your computer
