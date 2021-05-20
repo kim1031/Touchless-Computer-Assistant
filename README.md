@@ -6,7 +6,7 @@ Touchless Computer Assistant (TCA) enables you to control your Mac with just spe
 - ./src/Assistant.py: contains code needed to activate TCA (enables controllers for speech and gesture commands)
 - ./src/Mouse.py: contains helper code for performing cursor movements such as scrolling or moving your mouse
 - new_help.pdf: the user guide (able to open using voice commands)
-- ./lib: contains all relevant Leap SDK files needed to connect the Leap Motion Controller to Python
+- ./lib: contains relevant Leap SDK files needed to connect the Leap Motion Controller to Python, should be replaced
 
 ## Requirements for using TCA:
 ### Hardware:
@@ -16,6 +16,7 @@ Touchless Computer Assistant (TCA) enables you to control your Mac with just spe
 
 ### Software:
 - Python 2.7
+- Leap Motion SDK for macOS (download from here: https://developer.leapmotion.com/sdk-leap-motion-controller/)
 - portaudio (download using ```brew install portaudio```)
 - swig (download using ```brew install swig```)
 - Required Python packages (install using ```pip install```)
@@ -35,6 +36,7 @@ Touchless Computer Assistant (TCA) enables you to control your Mac with just spe
 conda create -n leap python=2.7
 conda activate leap
 ```
+3. Download the Leap Motion SDK and replace the contents of the current ```lib``` folder (of this repo) with the contents of the ```lib``` folder in the downloaded SDK
 3. Patch LeapPython.so by performing the following commands. Note that you need to find and replace ```[path-to-libpython2.7.dylib]```. This is the absolute path to the file ```libpython2.7.dylib``` which comes as part of your Python environment that you set up in Step 2.
 ```
 cd lib
