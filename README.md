@@ -32,7 +32,6 @@ Touchless Computer Assistant (TCA) enables you to control your Mac with just spe
 ```
 conda create -n leap python=2.7
 conda activate leap
-python --version
 ```
 3. Patch LeapPython.so by performing the following commands. Note that you need to find and replace ```[path-to-libpython2.7.dylib]```. This is the absolute path to the file ```libpython2.7.dylib``` which comes as part of your Python environment that you set up in Step 2.
 ```
